@@ -143,6 +143,7 @@
   /* om os grid begynder her */
 
   .about-us {
+    margin-top: 150px;
     display: grid;
     grid-template-columns: 0.2fr 0.3fr;
     grid-template-rows: 0.3fr 0.3fr 0.3fr;
@@ -300,6 +301,7 @@
 
       /* om os grid */
       .about-us {
+        margin-top: 50px;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
         gap: 20px 20px;
         justify-content: end;
@@ -318,7 +320,6 @@
       .about-text-2 p,
       .about-contact-text p {
         width: 100%;
-        max-width: ;
         word-wrap: break-word;
       }
       
