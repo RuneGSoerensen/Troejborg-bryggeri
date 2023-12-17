@@ -1,0 +1,345 @@
+
+
+/* product grid starter her */
+
+.products-header {
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 1%;
+    padding: 20px;
+  }
+
+
+.product-container {
+    margin-right: 25%;
+}
+
+.products { 
+    display: grid; 
+    grid-template-columns: 0.8fr 0.7fr; 
+    grid-template-rows: 0.3fr 1.6fr 0.9fr 1fr 0.8fr; 
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". product-name . ."
+    ". product-img product-desc ."
+    ". product-img product-quality ."
+    ". product-img product-buy .";
+    
+}
+
+.product-name {
+    justify-self: start;
+    margin-left: 70px;
+    grid-area: product-name;
+}
+
+.product-img {
+    justify-self: end; 
+    grid-area: product-img; 
+}
+
+.product-img img {
+    width: 500px;
+}
+
+.product-desc {
+    grid-area: product-desc;
+    word-wrap: break-word;
+    width: 500px;
+}
+
+.product-quality {
+    grid-area: product-quality;
+}
+.product-quality ul {
+    list-style-type: disc;
+    color: var(--blue-color);
+    margin-left: 20px;
+}
+
+.product-buy {
+    align-self: end;
+    grid-area: product-buy;
+}
+.product-buy img {
+    padding-right: 20px;
+    width: 120px;
+    height: 40px;
+}
+
+/* product grid slutter her */
+/* artikel 1 grid starter her */
+
+
+.articel {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.3fr 0.3fr 0.3fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: start;
+    grid-template-areas:
+      "articel-image"
+      "articel-text-1"
+      "articel-text-2"
+      "articel-text-3";
+  }
+  
+  .articel-image { grid-area: articel-image; }
+  
+  .articel-text-1 { grid-area: articel-text-1; }
+  
+  .articel-text-2 { grid-area: articel-text-2; }
+  
+  .articel-text-3 {
+    grid-area: articel-text-3;
+
+}
+
+  .articel-text {
+    padding: 20px;
+  }
+  
+/* artikel 1 grid slutter her */
+/* artikel 2 grid starter her */
+
+.articel-2 {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 80px 30px;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template-areas:
+      "articel-header-text articel-header-text"
+      "articel-text-1 articel-text-1-img"
+      "articel-text-2-img articel-text-2";
+  }
+  .articel-2 img {
+    width: 550px;
+  }
+  .articel-2-header-mobile {
+    display: none;
+  }
+  .articel-header-text {
+    justify-self: center;
+    grid-area: articel-header-text;
+  }
+  
+  .articel-text-1 { grid-area: articel-text-1;}
+  
+  .articel-text-1-img { grid-area: articel-text-1-img; }
+  
+  .articel-text-2-img { grid-area: articel-text-2-img; }
+  
+  .articel-text-2 { grid-area: articel-text-2; }
+
+  /* articel 2 grid slutter her. */
+
+  /* om os grid begynder her */
+
+  .about-us {
+    display: grid;
+    grid-template-columns: 0.2fr 0.3fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr;
+    grid-auto-columns: 1fr;
+    gap: 100px 20px;
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+      "about-image-1 about-text-1"
+      "about-text-2 about-image-2"
+      "about-contact about-contact-text";
+  }
+  
+  .about-image-1 {
+    justify-self: start;
+    grid-area: about-image-1;
+  }
+  
+  .about-text-1 {
+    justify-self: end;
+    grid-area: about-text-1;
+  }
+  
+  .about-text-2 {
+    justify-self: start;
+    grid-area: about-text-2;
+  }
+  
+  .about-image-2 { grid-area: about-image-2; }
+  
+  .about-contact {
+    justify-self: start;
+    grid-area: about-contact;
+  }
+  
+  .about-image-1 img, .about-image-2 img {
+    width: 500px;
+  }
+  .about-text-1 p,
+  .about-text-2 p,
+  .about-contact-text p {
+    width: 400px;
+    word-wrap: break-word;
+  }
+
+  .about-contact-text {
+    justify-self: start;
+    grid-area: about-contact-text;
+  }
+  
+
+
+  
+
+@media screen and (max-width: 1118px) {
+    
+    /* Product breakpoint css starter her */
+    
+    .products-header {
+        text-align: center;
+        margin-top: 70px;
+    }
+    .product-container {
+        margin-top: 70px;
+    }
+    
+    .products {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 20px 1fr 0.5fr 50px 100px;
+        gap: 20px 0px;
+        grid-template-areas:
+          "product-name"
+          "product-img"
+          "product-desc"
+          "product-quality"
+          "product-buy";
+      }
+    
+      
+      .product-name {
+        margin-left: 0;
+        grid-area: product-name;
+    }
+      
+      .product-img {
+        justify-self: start;
+        grid-area: product-img;
+    }
+
+      .product-img img {
+        width: 350px;
+      }
+      
+      .product-desc {
+        width: 350px;
+        grid-area: product-desc;
+    }
+      
+      .product-quality { grid-area: product-quality; }
+      
+      .product-buy { grid-area: product-buy; }
+    
+    /* Product breakpoint css slutter her */
+    /* articel 1 breakpoint start her */
+
+    .articel {
+        grid-template-rows: 0.8fr 0.5fr 0.5fr 0.5fr 1fr;
+    }
+
+    .articel-text-3 {
+        margin-bottom: 0;
+    }
+    .articel .articel-image img {
+        width: 100%;
+        margin-top: 8%;
+    }
+    /* articel 1 breakpoint slutter her */
+    /* articel 2 breakpoint start her */
+
+
+
+    /* articel 2 breakpoint slutter her her */
+    .articel-2 { 
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr 0.5fr 0.5fr;
+        gap: 30px 0px;
+        grid-template-areas:
+          "articel-header-text"
+          "articel-text-1"
+          "articel-text-1-img"
+          "articel-text-2"
+          "articel-text-2-img";
+      }
+      
+      .articel-header-text { grid-area: articel-header-text; }
+      
+      .articel-text-1 { grid-area: articel-text-1; }
+      
+      .articel-text-1-img { grid-area: articel-text-1-img; }
+      
+      .articel-text-2-img { grid-area: articel-text-2-img; }
+      
+      .articel-text-2 { grid-area: articel-text-2; }
+
+      .articel-2 img {
+        width: 100%;
+      }
+      .articel-2-header-mobile {
+        display: block;
+        margin-top: 50px;
+      }
+
+      /* om os grid */
+      .about-us {
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 20px 20px;
+        justify-content: end;
+        grid-template-areas:
+          "about-image-1"
+          "about-text-1"
+          "about-image-2"
+          "about-text-2"
+          "about-contact-text"
+          "about-contact";
+      }
+      .about-image-1 img, .about-image-2 img {
+        width: 100%;
+      }
+      .about-text-1 p,
+      .about-text-2 p,
+      .about-contact-text p {
+        width: 100%;
+        max-width: ;
+        word-wrap: break-word;
+      }
+      
+      .about-image-1 { grid-area: about-image-1; }
+      
+      .about-text-1 { grid-area: about-text-1; }
+      
+      .about-image-2 { grid-area: about-image-2; }
+      
+      .about-text-2 { grid-area: about-text-2; }
+      
+      .about-contact-text { grid-area: about-contact-text; }
+      
+      .about-contact { grid-area: about-contact; }
+      
+
+
+
+
+
+
+
+}
+  

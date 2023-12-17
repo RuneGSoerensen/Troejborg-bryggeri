@@ -47,8 +47,6 @@ body {
 
 ul {
   list-style: none;
-  /* Color highlighting when pressed on mobile devices */
-  /*-webkit-tap-highlight-color: transparent;*/
 }
 
 a {
@@ -70,6 +68,7 @@ a {
   background-color: var(--blue-color);
   box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
   z-index: var(--z-fixed);
+  
 }
 
 /*=============== NAV ===============*/

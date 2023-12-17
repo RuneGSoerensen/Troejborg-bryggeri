@@ -6,99 +6,129 @@
     <link rel="icon" href="media/favicon.png" type="image/x-icon">
     <title>Document</title>
     <!-- External css sheets -->
-     <!--=============== REMIXICONS ===============-->
+     <!--=============== Font awesome/REMIXICONS ===============-->
      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- CSS Style sheets -->
 
     <!-- Navbar css link -->
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav container">
-           <div class="nav__data">
-              <a href="#" class="nav__logo">
-                 <!-- <i class="ri-planet-line"></i> Company -->
-                 <img src="media/logo.png" alt="Trøjborg logo">
-              </a>
-              
-              <div class="nav__toggle" id="nav-toggle">
-                 <i class="ri-menu-line nav__burger"></i>
-                 <i class="ri-close-line nav__close"></i>
-              </div>
-           </div>
+      <!------------------- Navigations bar ------------------->
+      <header class="header">
+            <nav class="nav container">
+               <div class="nav__data">
+                  <a href="#" class="nav__logo">
+                     <img src="media/logo.png" alt="Trøjborg logo">
+                  </a>
+                  
+                  <div class="nav__toggle" id="nav-toggle">
+                     <i class="ri-menu-line nav__burger"></i>
+                     <i class="ri-close-line nav__close"></i>
+                  </div>
+               </div>
 
-           <!--=============== NAV MENU ===============-->
-           <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                 <li class="dropdown__item">
-                    <div class="nav__link">
-                       UDFORSK <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                    </div>
+               <!--=============== NAV MENU ===============-->
+               <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list">
+                     <li><a href="index.html" class="nav__link">HJEM</a></li>
+                     <li class="dropdown__item">
+                        <div class="nav__link">
+                              UDFORSK <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                           </div>
 
-                    <ul class="dropdown__menu">
-                       <li>
-                          <a href="#" class="dropdown__link">
-                             Hvorfor alkoholfri?
-                          </a>                          
-                       </li>
+                        <ul class="dropdown__menu">
+                           <li>
+                              <a href="hvorfor-alkoholfri.html" class="dropdown__link">
+                                 Hvorfor alkoholfri?
+                              </a>                          
+                           </li>
 
-                       <li>
-                          <a href="#" class="dropdown__link">
-                             Fakta og myter
-                          </a>
-                       </li>
-                    </ul>
-                 </li>
+                           <li>
+                              <a href="fakta-og-myter.html" class="dropdown__link">
+                                 Fakta og myter
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
 
-                 <li class="dropdown__item">
-                    <div class="nav__link">
-                       SHOP <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                    </div>
+                     <li class="dropdown__item">
+                        <div class="nav__link">
+                           SHOP <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                           <li>
+                              <a href="mocktails.html" class="dropdown__link">
+                                 MOCKTAILS
+                              </a>                          
+                           </li>
 
-                    <ul class="dropdown__menu">
-                       <li>
-                          <a href="#" class="dropdown__link">
-                             MOCKTAILS
-                          </a>                          
-                       </li>
+                           <li>
+                              <a href="beer.html" class="dropdown__link">
+                                 ØL
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <!--=============== DROPDOWN 2 ===============-->
+                     <li><a href="om-os.html" class="nav__link">OM OS</a></li>
+                     <li><a href="#" class="nav__link">LOGIN</a></li>
+                     <li><a href="#" class="nav__link"><i class="ri-search-line"></i></a></li>
+                  </ul>
+               </div>
+            </nav>
+      </header>
+      
+      <h2 class="header__h1">Velkomen til Trøjborg Bryggeri</h2>
 
-                       <li>
-                          <a href="#" class="dropdown__link">
-                             ØL
-                          </a>
-                       </li>
-                    </ul>
-                 </li>
-                 <!--=============== DROPDOWN 2 ===============-->
-                 <li class="dropdown__item">
-                    <div class="nav__link">
-                       OM OS <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                    </div>
+      <!---------------------- JS Slider ---------------------->
+      <section class="wrapper">
+         <i id="left" class="fa-solid fa-angle-left"></i>
+         <div class="carousel">
+            <img src="media/slider/img-1.jpg" alt="img" draggable="false">
+            <img src="media/slider/img-2.jpg" alt="img" draggable="false">
+            <img src="media/slider/img-3.jpg" alt="img" draggable="false">
+            <img src="media/slider/img-4.jpg" alt="img" draggable="false">
+            <img src="media/slider/img-5.jpg" alt="img" draggable="false">
+         </div>
+         <i id="right" class="fa-solid fa-angle-right"></i>
+         </section>
 
-                    <ul class="dropdown__menu">
-                       <li>
-                          <a href="#" class="dropdown__link">
-                             KONTAKT
-                          </a>                          
-                       </li>
+      <!---------------------- Info grafik ---------------------->
+      <main class="infographic">
+         <div class="info__titles">
+         <h2 class="header__h2__mobile">Velkomen til Trøjborg Bryggeri</h2>
+         <h2 class="info-h2">Hvorfor alkoholfri?</h2>
+         </div>
+         <div class="info__container">
+            <img src="media/hvorfor-alkoholfri.webp" alt="En infografik omkring alkoholfri produkter">
+         </div>
+      </main>
 
-                       <li>
-                          <a href="#" class="dropdown__link">
-                             HISTORIE
-                          </a>
-                       </li>
-                    </ul>
-                 </li>
-                 <li><a href="#" class="nav__link">LOGIN</a></li>
-                 <li><a href="#" class="nav__link"><i class="ri-search-line"></i></a></li>
-              </ul>
-           </div>
-        </nav>
-     </header>
 
-     
+
+      <!---------------------- Footer ---------------------->
+      <footer class="footer">
+         <div class="social">
+               <a href="https://www.facebook.com/sharksaarhus/?locale=da_DK" target="”_blank”" >
+                  <i class="fab fa-facebook"></i>
+               </a>
+               <a href="https://www.instagram.com/sharkspoolhallogdiner/" target="”_blank”">
+                  <i class="fab fa-instagram"></i>
+               </a>
+               <a href="https://www.google.com/maps/place/Sharks/@56.1555213,10.2036504,17z/data=!3m1!4b1!4m6!3m5!1s0x464c3f93ddfeacb3:0xd805db22a7d13f2d!8m2!3d56.1555213!4d10.2062253!16s%2Fg%2F11b8072jw7?entry=ttu" target="”_blank”">
+                  <i class="fa-solid fa-location-dot"></i>
+               </a>
+               <a href="https://www.findsmiley.dk/48948" target="”_blank”">
+                  <i class="fa-regular fa-face-smile"></i>
+               </a>
+         </div>
+         <p class="copyright">Terms of use | Privacy Policy</p>
+         <p>Tlf: 86 18 09 90 | mail@sharks.dk</p>
+      </footer>
      <!--=============== MAIN JS ===============-->
      <script src="js/main.js"></script>
 </body>

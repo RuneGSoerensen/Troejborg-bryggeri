@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/favicon.png" type="image/x-icon">
+    <title>Document</title>
+    <!-- External css sheets -->
+     <!--=============== Font awesome/REMIXICONS ===============-->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- CSS Style sheets -->
+
+    <!-- Navbar css link -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+      <!------------------- Navigations bar ------------------->
+      <header class="header">
+            <nav class="nav container">
+               <div class="nav__data">
+                  <a href="#" class="nav__logo">
+                     <img src="media/logo.png" alt="Trøjborg logo">
+                  </a>
+                  
+                  <div class="nav__toggle" id="nav-toggle">
+                     <i class="ri-menu-line nav__burger"></i>
+                     <i class="ri-close-line nav__close"></i>
+                  </div>
+               </div>
+
+               <!--=============== NAV MENU ===============-->
+               <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list">
+                     <li><a href="index.html" class="nav__link">HJEM</a></li>
+                     <li class="dropdown__item">
+                        <div class="nav__link">
+                              UDFORSK <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                           </div>
+
+                        <ul class="dropdown__menu">
+                           <li>
+                              <a href="hvorfor-alkoholfri.html" class="dropdown__link">
+                                 Hvorfor alkoholfri?
+                              </a>                          
+                           </li>
+
+                           <li>
+                              <a href="fakta-og-myter.html" class="dropdown__link">
+                                 Fakta og myter
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+
+                     <li class="dropdown__item">
+                        <div class="nav__link">
+                           SHOP <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                           <li>
+                              <a href="mocktails.html" class="dropdown__link">
+                                 MOCKTAILS
+                              </a>                          
+                           </li>
+
+                           <li>
+                              <a href="beer.html" class="dropdown__link">
+                                 ØL
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <!--=============== DROPDOWN 2 ===============-->
+                     <li><a href="om-os.html" class="nav__link">OM OS</a></li>
+                     <li><a href="#" class="nav__link">LOGIN</a></li>
+                     <li><a href="#" class="nav__link"><i class="ri-search-line"></i></a></li>
+                  </ul>
+               </div>
+            </nav>
+      </header>
+      <h1 class="header__h1 articel-2-header-mobile">Velkomen til Trøjborg Bryggeri</h1>
+      
+      <main class="about-us">
+         <div class="about-image-1">
+            <img src="media/trøjborg-owner.webp" alt="Freja - Ejeren af Trøjborg Bryggeri" title="Freja - Passioneret brygger og visionær bag Trøjborg Bryggeri">
+         </div>
+         <div class="about-text-1">
+            <h2>Om Trøjborg Bryggeri</h2>
+            <br>
+            <p>Velkommen til Trøjborg Bryggeri – en oase af smag og sundhed 
+               i hjertet af Aarhus. Vi er et passioneret mikrobryggeri, hjemmehørende 
+               i en hyggelig baggård ved Tordenskjoldsgade. Vores rejse begyndte med 
+               en mission om at præsentere et revolutionerende syn på alkoholfri øl, 
+               der kombinerer fantastisk smag med sundhed og bæredygtighed.</p>
+               <br>
+            <h2>Brygget med Omhu</h2>
+            <br>
+            <p>Hos Trøjborg Bryggeri forstår vi, at gode øl begynder med omhyggeligt 
+               udvalgte ingredienser. Vores alkoholfrie øl er ikke kun en erstatning; det er en
+                fejring af smagsoplevelsen uden alkohol. Vi brygger med dedikation og 
+                håndværk for at skabe et sortiment af alkoholfrie øl, der ikke går på kompromis 
+                med kvalitet eller nydelse.</p>
+         </div>
+         <div class="about-text-2">
+            <h2>Bæredygtighed i Hver Dråbe</h2>
+            <br>
+            <p>Vi tror på at drive vores bryggeri på en måde, der respekterer vores planet. 
+               Fra bryggeprocessen til emballagen stræber vi efter bæredygtighed.
+                Vores produkter er ikke bare en velsmagende forfriskning; de er et 
+                skridt mod en mere bæredygtig og bevidst livsstil.</p>
+                <br>
+            <h2>Menneskene Bag Bryggeriet</h2>
+            <br>
+            <p>Bag hvert flaskemærke er et team af dedikerede enkeltpersoner, der deler
+                en lidenskab for at ændre spillereglerne inden for alkoholfri øl.
+                 Vi tror på, at vores mangfoldighed og dedikation er hemmeligheden
+                  bag vores bryggekunst.</p>
+         </div>
+         <div class="about-image-2">
+            <img src="media/trøjborg-owner2.webp" alt="Freja - Ejeren af Trøjborg Bryggeri" title="Freja - Passioneret brygger og visionær bag Trøjborg Bryggeri">
+         </div>
+         <div class="about-contact">
+                   <h1>Contact</h1>
+                   <label for="name"><input type="text" id="name" placeholder="Dit Navn"></label>
+                   <label for="email"><input type="email" id="email" placeholder="Din email"></label>
+                   <label for="phone"><input type="number" id="phone" placeholder="Telefon Nr"></label>
+                   <label for="besked"><textarea name="Besked" id="besked" cols="30" rows="10" placeholder="Skriv en kommentar.."></textarea></label>
+                   <input type="submit" value="Send">
+         </div>
+         <div class="about-contact-text">
+            <h2>Har du spørgsmål?</h2>
+            <p>Vi inviterer dig til at dykke ned i vores verden af smag 
+               og sundhed. Besøg vores bryggeri og lad dig inspirere af 
+               Trøjborg's unikke atmosfære. Har du spørgsmål eller 
+               ønsker mere information? Udfyld kontaktformularen, og del dine 
+               tanker med os.</p>
+         </div>
+       </main>
+      <!---------------------- Footer ---------------------->
+      <footer class="footer">
+         <div class="social">
+               <a href="https://www.facebook.com/sharksaarhus/?locale=da_DK" target="”_blank”" >
+                  <i class="fab fa-facebook"></i>
+               </a>
+               <a href="https://www.instagram.com/sharkspoolhallogdiner/" target="”_blank”">
+                  <i class="fab fa-instagram"></i>
+               </a>
+               <a href="https://www.google.com/maps/place/Sharks/@56.1555213,10.2036504,17z/data=!3m1!4b1!4m6!3m5!1s0x464c3f93ddfeacb3:0xd805db22a7d13f2d!8m2!3d56.1555213!4d10.2062253!16s%2Fg%2F11b8072jw7?entry=ttu" target="”_blank”">
+                  <i class="fa-solid fa-location-dot"></i>
+               </a>
+               <a href="https://www.findsmiley.dk/48948" target="”_blank”">
+                  <i class="fa-regular fa-face-smile"></i>
+               </a>
+         </div>
+         <p class="copyright">Terms of use | Privacy Policy</p>
+         <p>Tlf: 86 18 09 90 | mail@sharks.dk</p>
+      </footer>
+     <!--=============== MAIN JS ===============-->
+     <script src="js/main.js"></script>
+</body>
+</html>

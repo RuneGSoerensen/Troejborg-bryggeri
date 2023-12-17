@@ -1,0 +1,343 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Farver ==========*/
+  --blue-color: hsl(191, 51%, 19%);
+  --blue-color-light: hsl(191, 51%, 25%);
+  --white-color: #F6F3F1;
+  --body-color: #F6F3F1;
+
+  /*========== Font and typography ==========*/
+  /* 1rem = 16px */
+  --body-font: "Montserrat", sans-serif;
+  --normal-font-size: .938rem;
+
+  /*========== bold/regular ==========*/
+  --font-regular: 400;
+  --font-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* BASE CSS SLUTTER HER */
+
+/* Index.html CSS */
+
+.header__h1 {
+  text-align: center;
+  margin-top: 6%;
+  margin-bottom: 1%;
+  padding: 20px;
+}
+.header__h2__mobile {
+  display: none;
+}
+.infographic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: auto;
+}
+.infographic .info__container {
+  background-color: var(--blue-color-light);
+  max-width: 45.75rem;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.infographic .info-h2 {
+  margin: 30px;
+}
+.infographic img {
+  width: 100%;
+  max-width: 43rem;
+}
+
+
+
+/* SLIDER CSS BEGHYNDER HER */
+
+
+  .wrapper{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+  }
+  .wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+  
+
+
+/* Styling af footer */
+
+footer {
+    background-color: var(--blue-color);
+    width: 100%;
+    margin-top: 50px;
+  }
+  .footer,
+  .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--white-color);
+  }
+  
+  .social a {
+    font-size: 22px;
+    color: inherit;
+    border: 1px solid var(--white-color);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    margin-top: 1rem;
+  }
+  .social a:hover {
+    opacity: 0.3;
+  }
+  
+  .footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  .footer ul li {
+    display: inline-block;
+  }
+  
+  .footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .footer ul li a:hover {
+    opacity: 1;
+  }
+  .footer,
+  .copyright {
+    text-align: center;
+    font-size: 0.813rem;
+    color: var(--white-color);
+  }
+
+  /* Footer css slutter her */
+
+  /* artikel css starter her */
+
+  .articel {
+    max-width: 700px;
+    margin: 0 auto;
+
+  }
+  .articel .articel-image img {
+    max-width: 1000px;
+  }
+
+  .articel-p {
+    padding: 20px;
+  }
+  .articel-p p {
+    word-wrap: break-word;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  /* Kontakt form css starter her. */
+
+.about-contact{
+    display: block;
+    padding: 5px;
+    width: 350px;
+    height: 100%;
+    background-color: var(--blue-color-light);
+    border-radius: 10px;
+}
+
+.about-contact h1{
+    display: flex;
+    color: var(--body-color);
+    margin: 4% auto;
+    justify-content: center;
+    font-size: 30px ;
+}
+.about-contact label{
+    display: block;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.about-contact input[type="text"],input[type="email"], input[type="number"] {
+    display: block;
+    margin: 2% auto;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--body-color);
+}
+.about-contact input[type="submit"]{
+    display:block;
+    margin: 4% auto;
+    width: 30%;
+    height: 40px;
+    background-color: var(--body-color);
+    color: var(--blue-color);
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.about-contact textarea{
+    display: block;
+    resize: none;
+    margin: 2% auto;
+    width: 100%;
+    height: 170px;
+    border-radius: 5px;
+    background-color: var(--body-color);
+}
+
+
+
+  @media screen and (max-width: 1118px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+    .infographic img {
+      width: 350px;
+    }
+    .infographic .info__container {
+      width: 400px;
+      margin: 10px;
+    }
+    .wrapper {
+      max-width: 600px;
+    }
+   
+  
+  }
+  
+  @media screen and (max-width: 430px) {
+    .wrapper {
+      width: 85%;
+      margin-top: 17%; 
+    }
+    .carousel img {
+      width: 100%;
+    }
+    .header__h1 {
+      display: none;
+    }
+    .infographic {
+      height: 333px;
+    }
+    .infographic img {
+      width: 350px;
+    }
+    .infographic .info__container {
+      width: 400px;
+      margin: 10px;
+    }
+   
+  
+  }
+
+  @media screen and (max-width: 375px) {
+    .infographic img {
+      width: 310px;
+    }
+    .infographic {
+      height: 333px;
+    }
+    .infographic .info__container {
+      width: 340px;
+      margin: 10px;
+    }
+  }
